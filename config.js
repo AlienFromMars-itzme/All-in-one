@@ -1,7 +1,7 @@
 module.exports = {
-  OWNER_IDS: [], // Bot owner ID's
-  PREFIX: "!", // Default prefix for the bot
-  SUPPORT_SERVER: "", // Your bot support server
+  OWNER_IDS: [1214845468928901123], // Bot owner ID's
+  PREFIX: "&", // Default prefix for the bot
+  SUPPORT_SERVER: "https://discord.gg/xyler", // Your bot support server
   PRESENCE: {
     ENABLED: true, // Whether or not the bot should update its status
     STATUS: "online", // The bot's status [online, idle, dnd, invisible]
@@ -9,15 +9,15 @@ module.exports = {
     MESSAGE: "{members} members in {servers} servers", // Your bot status message
   },
   DASHBOARD: {
-    enabled: false, // enable or disable dashboard
+    enabled: true, // enable or disable dashboard
     baseURL: "http://localhost:8080", // base url
     failureURL: "http://localhost:8080", // failure redirect url
     port: "8080", // port to run the bot on
   },
   INTERACTIONS: {
-    SLASH: false, // Should the interactions be enabled
-    CONTEXT: false, // Should contexts be enabled
-    GLOBAL: false, // Should the interactions be registered globally
+    SLASH: true, // Should the interactions be enabled
+    CONTEXT: true, // Should contexts be enabled
+    GLOBAL: true, // Should the interactions be registered globally
     TEST_GUILD_ID: "xxxxxxxxxx", // Guild ID where the interactions should be registered. [** Test you commands here first **]
   },
   XP_SYSTEM: {
@@ -44,14 +44,14 @@ module.exports = {
     DENIED_EMBED: "#ff0000",
   },
   IMAGE: {
-    BASE_API: "https://image-api.strangebot.xyz",
+    BASE_API: "",
   },
   MUSIC: {
     IDLE_TIME: 60, // Time in seconds before the bot disconnects from the voice channel
     MAX_SEARCH_RESULTS: 5,
     NODES: [
       {
-        host: "ger.lavalink.mitask.tech",
+        host: "utopia.pylex.xyz",
         port: 2333,
         password: "lvserver",
         identifier: "German Link",
